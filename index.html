@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+  <link href="/dist/output.css" rel="stylesheet">
+  <link rel="stylesheet" href="assets/style.css">
+  <!--CDN link to fontawesome-->
+  <script src="https://kit.fontawesome.com/09309372ea.js" crossorigin="anonymous"></script>
+  <title>Frontend Mentor | News homepage</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
+  </style>
+</head>
+
+<body>
+
+  <nav class="nav--container flex justify-between items-center gap-2 p-1 my-4">
+    <div class="nav--logo">
+      <img src="./assets/images/logo.svg" alt="logo">
+    </div>
+    <div class="nav--links flex gap-5">
+      <div class="x--icon">
+        <i class="fas fa-times"></i>
+      </div>
+      <a class="text-sm color text-slate-500 hover:text-blue-500 transition-all" href="#">Home</a>
+      <a class="text-sm color text-slate-500 hover:text-blue-500 transition-all" href="#">New</a>
+      <a class="text-sm color text-slate-500 hover:text-blue-500 transition-all" href="#">Popular</a>
+      <a class="text-sm color text-slate-500 hover:text-blue-500 transition-all" href="#">Trending</a>
+      <a class="text-sm color text-slate-500 hover:text-blue-500 transition-all" href="#">Categories</a>
+    </div>
+    <!--include hamburger icon-->
+    <div class="nav--hamburger">
+      <div class="bars-1"></div>
+      <div class="bars-2"></div>
+      <div class="bars-3"></div>
+    </div>
+  </nav>
+
+  <main>
+    <div class="custom-container-class grid-cols-4 gap-6 mt-8 mb-24">
+      <div class="image--container col-start-1 col-end-4">
+        <img src="assets/images/image-web-3-desktop.jpg" alt="editor">
+      </div>
+      <h1 class="text-5xl font-extrabold row-start-2 col-span-1 my-4 md:my-0">
+        The Bright Future of Web 3.0?
+      </h1>
+
+      <p class="text-slate-500 row-start-2 col-span-2 md:ml-8">
+        We dive into the next evolution of the web that claims to put the power of the platforms back into the hands
+        of
+        the
+        people.
+        But is it really fulfilling its promise?
+        <br>
+        <button
+          class="bg-red-500 py-4 px-8 tracking-widest text-sm text-white font-medium my-7 hover:bg-red-300 transition-all ">
+          READ MORE
+        </button>
+      </p>
+
+      <aside class="text-white bg-slate-900 row-start-1 row-span-2 col-start-4 p-4 flex flex-col justify-evenly">
+        <h1 class="text-orange-300 font-medium text-4xl ">
+          New
+        </h1>
+
+        <article class="mb-4">
+          <h3 class="font-semibold text-base mb-2">
+            Hydrogen VS Electric Cars
+          </h3>
+          <p class="text-slate-400 text-xs">
+            Will hydrogen-fueled cars ever catch up to EVs?
+          </p>
+        </article>
+        <hr class="border-slate-400 ">
+
+        <article class="mb-4">
+          <h3 class="font-semibold text-sm mb-2">
+            The Downsides of AI Artistry
+          </h3>
+          <p class="text-slate-400 text-xs">
+            What are the possible adverse effects of on-demand AI image generation?
+          </p>
+        </article>
+        <hr class="border-slate-400 ">
+
+        <article>
+          <h3 class="font-semibold text-sm mb-2">
+            Is VC Funding Drying Up?
+          </h3>
+          <p class="text-slate-400 text-xs">
+            Private funding by VC firms is down 50% YOY. We take a look at what that means.
+          </p>
+        </article>
+
+      </aside>
+    </div>
+
+    <section class="custom-container-class grid-cols-3 gap-8">
+
+      <div class="aricle flex gap-3 mb-4">
+
+        <img class="w-40 h-40" src="assets/images/image-retro-pcs.jpg" alt="retro-pcs">
+        <div class="second--div">
+          <h1 class="text-slate-400 text-4xl font-semibold mb-2">
+            01
+          </h1>
+          <h3 class="font-bold mb-2">
+            Reviving Retro PCs
+          </h3>
+          <p class="text-sm text-slate-400 mb-2">
+            What happens when old PCs are given modern upgrades?
+          </p>
+        </div>
+
+      </div>
+
+      <div class="aricle flex gap-3 mb-4">
+        <img class="w-40 h-40" src="assets/images/image-top-laptops.jpg" alt="top-laptops">
+        <div>
+          <h1 class="text-slate-400 text-4xl font-semibold mb-2">
+            02
+          </h1>
+          <h3 class="font-bold mb-2">
+            Top 10 Laptops of 2022
+          </h3>
+          <p class="text-sm text-slate-400 mb-2">
+            Our best picks for various needs and budgets.
+          </p>
+        </div>
+      </div>
+
+      <div class=" aricle flex gap-3 mb-4">
+        <img class="w-40 h-40" src="assets/images/image-gaming-growth.jpg" alt="growth-gaming">
+        <div>
+          <h1 class="text-slate-400 text-4xl font-semibold mb-2">
+            03
+          </h1>
+          <h3 class="font-bold mb-2">
+            The Growth of Gaming
+          </h3>
+          <p class="text-sm text-slate-400 mb-2">
+            How the pandemic has sparked fresh opportunities.
+          </p>
+        </div>
+      </div>
+
+    </section>
+  </main>
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="#">Vincent Scoma</a>.
+  </div>
+  <script src="assets/script.js"></script>
+</body>
+
+</html>
