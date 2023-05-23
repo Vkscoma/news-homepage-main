@@ -3,3 +3,5 @@
 ![Design preview for the News homepage coding challenge](./design/desktop-preview.jpg)
 
 Wanted to create a responive layout that uses Tailwind CSS. 
+
+Final version: https://vkscoma.github.io/news-homepage-main/
